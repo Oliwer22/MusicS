@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="../CssStyle/Reset.css">
+    <link rel="stylesheet" href="../CssStyle/NavBar.css">
+    <link rel="stylesheet" href="../CssStyle/Footer.css">
+    <link rel="stylesheet" href="../CssStyle/Sections.css">
+    <link rel="stylesheet" href="../CssStyle/StyleIndex.css">
+    <link rel="stylesheet" href="../https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <nav id="main-nav">
+        <a href="../index.html">Home</a>
+        <a href="../StylePage/History.html">Geschiedenis</a>
+        <a href="../StylePage/Cultuur.html">Cultuur</a>
+        <a href="../StylePage/Instruments.html">Instrumenten</a>
+        <a href="../StylePage/Apparatuur.html" class="active">Apparatuur</a>
+        <a href="../StylePage/Artists.html">Artists</a>
+
+    </nav>
+    <section id="header">
+        <div class="container">
+            <div class="left-div">
+            <img class="HoeImg" src="../IMG/HoeEnWat.jpg" alt="Image History">
+            </div>
+            <div class="right-div">
+            <h2>
+                <span class="NaamHover" >Apparatuur</span>
+            </h2>
+            <p>In de hiphopcultuur worden verschillende soorten apparatuur en software gebruikt om de kenmerkende geluiden en beats te creëren die zo typerend zijn voor het genre. Hier zijn enkele van de belangrijkste instrumenten en tools die populair zijn in de hiphopscene, zoals drumcomputers, Digital Audio Workstations (DAW) en DJ-apparatuur, en nog veel meer.</p>
+            </div>
+        </div>
+        </section>
+        <section id="Info">
+        <article>
+            <section id="card-container">
+            <div class="card">
+                <div class="card__image">
+                <img src="../IMG/DJapp.jpg" alt="Image DJ-apparatuur">
+                </div>
+                <div class="card__content">
+                <p class="card__title">DJ-apparatuur</p>
+                <p class="card__text">DJ-apparatuur</p>
+                <a class="card__button" href="#Info" onclick="openPopup(1)">Bekijk</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                <img src="../IMG/Drum.jpg" alt="Image Drumcomputers">
+                </div>
+                <div class="card__content">
+                <p class="card__title">Drumcomputers</p>
+                <p class="card__text">Drumcomputers</p>
+                <a class="card__button" href="#Info" onclick="openPopup(2)">Bekijk</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                <img src="../IMG/DAW.jpg" alt="Image DAW">
+                </div>
+                <div class="card__content">
+                <p class="card__title">Digital Audio Workstations</p>
+                <p class="card__text">Digital Audio Workstations</p>
+                <a class="card__button" href="#Info" onclick="openPopup(3)">Bekijk</a>
+                </div>
+            </div>
+            </section>
+        </article>
+        </section>
+        <a href="#" class="scrolltop"><i class="fa fa-arrow-up" style="color: white !important;"></i></a>
+        <footer>
+        <p>&copy; 2023 <a>Oliwier Kacper Wozniak.</a> All rights reserved.</p>
+        </footer>
+        <div id="popup1" class="popup">
+        <div class="popup-content">
+            <h2>Info</h2>
+            <img src="../../IMG/" alt="Popup  Image">
+            <div class="close-btn" onclick="closePopup(1)">&times;</div>
+        </div>
+        </div>
+        <div id="popup2" class="popup">
+        <div class="popup-content">
+            <h2>Drumcomputers </h2>
+            <img src="../IMG/Drum.jpg" alt="Popup 2 Image">
+            <p>Drumcomputers zoals de Roland TR-808 en TR-909 zijn iconisch in de hiphopmuziek. Ze bieden een breed scala aan drumgeluiden en ritmische patronen die vaak worden gebruikt als basis voor hiphopbeats..</p>
+            <div class="close-btn" onclick="closePopup(2)">&times;</div>
+            <a class="card__button" href="https://www.schreeven.nl/content/57-drumcomputer" target="_blank" onclick="closePopup(1)">Gaan</a>
+        </div>
+        </div>
+        <div id="popup3" class="popup">
+        <div class="popup-content">
+            <h2>Digital Audio Workstations of DAW</h2>
+            <img src="../IMG/DAW.jpg" alt="Popup 3 Image">
+            <p>DAW-software zoals Ableton Live, FL Studio, Logic Pro en Pro Tools worden veel gebruikt in de hiphopgemeenschap. Ze bieden de mogelijkheid om verschillende geluidssporen te bewerken, te mixen en te combineren, evenals geavanceerde effecten en productietools.</p>
+            <div class="close-btn" onclick="closePopup(3)">&times;</div>
+            <a class="card__button" href="https://blog.native-instruments.com/what-is-a-daw-in-music-digital-audio-workstations-explained/#:~:text=A%20Digital%20Audio%20Workstation%20(DAW,music%2C%20UX%2C%20and%20more." target="_blank" onclick="closePopup(3)">Gaan</a>
+        </div>
+        </div>
+        <script>
+        function openPopup(popupId) {
+            let popup = document.getElementById("popup" + popupId);
+            popup.style.display = "block";
+        }
+        function closePopup(popupId) {
+            let popup = document.getElementById("popup" + popupId);
+            popup.style.display = "none";
+        }
+        </script>
+</body>
+</html>

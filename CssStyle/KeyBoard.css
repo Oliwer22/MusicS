@@ -1,0 +1,135 @@
+section#Info {
+    background: black;
+    color: white;
+    min-height: 100vh;
+  }
+#keyboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#keyboard ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  max-width: 1000px;
+  margin: 0 auto; 
+}
+
+#keyboard ul li {
+  position: relative;
+  display: inline-block;
+  width: 150px; 
+  height: 150px; 
+  margin: 5px;
+  background-color: #e9e9e9;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+  transition: transform 0.3s; 
+}
+
+#keyboard ul li:hover {
+  transform: scale(1.1);
+}
+
+#keyboard ul li .note-label {
+  display: none;
+}
+
+#keyboard ul li img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: 0 auto;
+  width: 100%; 
+  height: 100%;
+}
+
+#keyboard ul li .note-label {
+  display: none;
+}
+  
+  #keyboard ul li.white[data-note="C"] {
+    background-color: #ff0000;
+  }
+  
+  #keyboard ul li.black[data-note="C#"] {
+    background-color: #00ff00; 
+  }
+  
+  #keyboard ul li.white[data-note="D"] {
+    background-color: #0000ff; 
+  }
+  
+  #keyboard ul li.black[data-note="D#"] {
+    background-color: #ffff00;  
+  }
+  
+  #keyboard ul li.white[data-note="E"] {
+    background-color: #ff00ff;  
+  }
+  
+  #keyboard ul li.white[data-note="F"] {
+    background-color: #00ffff; 
+  }
+  
+  #keyboard ul li.black[data-note="F#"] {
+    background-color: #ffa500;  
+  }
+  
+  #keyboard ul li.white[data-note="G"] {
+    background-color: #800080; 
+  }
+  
+  #keyboard ul li.black[data-note="G#"] {
+    background-color: #ff69b4;
+  }
+  
+  #keyboard ul li.white[data-note="A"] {
+    background-color: #008000; 
+  }
+  
+  #keyboard ul li.black[data-note="A#"] {
+    background-color: #800000; 
+  }
+  
+  #keyboard ul li.white[data-note="B"] {
+    background-color: #ffff00; 
+  }
+  
+  #keyboard ul li.white[data-note="C2"] {
+    background-color: #ffa500; 
+  }
+  
+  #keyboard ul li.black[data-note="C#2"] {
+    background-color: #008080;
+  }
+  
+  #keyboard ul li.white[data-note="D2"] {
+    background-color: #800080; 
+  }
+  
+  #keyboard ul li.black[data-note="D#2"] {
+    background-color: #ff69b4; 
+  }
+  
+  #keyboard ul li.white[data-note="E2"] {
+    background-color: #008000; 
+  }
+  #keyboard ul li.white[data-note="F2"] {
+    background-color: #ff00ff; 
+  }
+  #keyboard ul li.black[data-note="F#2"] {
+    background-color: #00ffff;
+  }
+  
+  #keyboard ul li.white[data-note="G2"] {
+    background-color: #800080; 
+  }
+p {  font-size: 1.5em;
+    text-align: center;}

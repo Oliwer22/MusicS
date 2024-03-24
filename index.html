@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="CssStyle/Reset.css">
+    <link rel="stylesheet" href="CssStyle/NavBar.css">
+    <link rel="stylesheet" href="CssStyle/Footer.css">
+    <link rel="stylesheet" href="CssStyle/Sections.css">
+    <link rel="stylesheet" href="CssStyle/StyleIndex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css" rel="stylesheet"/>
+</head>
+<body>
+  <nav id="main-nav">
+    <div class="dropdown">
+      <a href="#header" class="active">Home</a>
+      <div class="dropdown-content">
+        <a href="StylePage/History.html">Geschiedenis</a>
+        <a href="StylePage/Cultuur.html">Cultuur</a>
+        <a href="StylePage/Instruments.html">Instrumenten</a>
+        <a href="StylePage/Apparatuur.html">Apparatuur</a>
+        <a href="StylePage/Artists.html">Artists</a>
+      </div>
+    </div>
+    <a href="#Info">Info</a>
+    <a href="#Style">Stijl</a>
+    <a id="play-button">Play Music</a>
+
+  </nav>
+    <section id="header">
+        <div class="container">
+          <div class="left-div">
+            <img src="IMG/HipHopInfo.jpg" alt="Image">
+          </div>
+          <div class="right-div">
+            <h2>
+              <span class="NaamHover" >HipHop</span>
+            </h2>
+            <p>Hiphop is een invloedrijk muziekgenre dat ontstond in de jaren 70 in de Bronx, NYC. Het combineert muziek, dans, kunst en fashion. Hiphopmuziek kenmerkt zich door ritmische beats, samples en poëtische rapteksten. Het dient vaak als medium voor sociale en politieke boodschappen en belicht de ervaringen van de zwarte gemeenschap. Beroemde artiesten zoals Tupac, Notorious B.I.G., Jay-Z en Eminem zijn opgekomen dankzij hiphop. Subgenres zoals gangsta rap, trap en conscious rap hebben elk unieke kenmerken. Hiphop verbindt en inspireert en blijft een kracht in de muziekwereld.</p>
+          </div>
+        </div>
+      </section>
+      <section id="Info">
+        <article>
+          <section id="card-container">
+            <div class="card">
+              <div class="card__image">
+                <img src="IMG/HipHopHistory.jpg" alt="Image HipHopHistory">
+              </div>
+              <div class="card__content">
+                <p class="card__title">Geschiedenis</p>
+                <p class="card__text">Geschiedenis van HipHop hoe het toen was.</p>
+                <a class="card__button" href="StylePage/History.html">Bekijk</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image">
+                <img src="IMG/Card3.jpg" alt="Image Card 3">
+              </div>
+              <div class="card__content">
+                <p class="card__title">Cultuur</p>
+                <p class="card__text">Hoezo is dit zo populair.</p>
+                <a class="card__button" href="StylePage/Cultuur.html">Bekijk</a>
+              </div>
+            </div>
+          </section>
+        </article>
+      </section>
+    <section id="Style">
+      <article>
+        <section id="card-container">
+          <div class="card">
+            <div class="card__image">
+              <img src="IMG/Instruments.jpg" alt="Image Instruments">
+            </div>
+            <div class="card__content">
+              <p class="card__title">Instrumenten <p>
+              <p class="card__text">Instrumenten in het spel.</p>
+              <a class="card__button" href="StylePage/Instruments.html">Bekijk</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__image">
+              <img src="IMG/HoeEnWat.jpg" alt="Image Hoe en wat">
+            </div>
+            <div class="card__content">
+              <p class="card__title">Apparatuur of Software </p>
+              <p class="card__text">Hoe en wat.</p>
+              <a class="card__button" href="StylePage/Apparatuur.html">Bekijk</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__image">
+              <img src="IMG/Artists.jpg" alt="Image Artists">
+            </div>
+            <div class="card__content">
+              <p class="card__title">Artists </p>
+              <p class="card__text">Wie.</p>
+              <a class="card__button" href="StylePage/Artists.html">Bekijk</a>
+            </div>
+          </div>
+        </section>
+      </article>
+    </section>
+    <audio id="background-music" autoplay muted>
+      <source src="Music/music.mp3" type="audio/mpeg">
+    </audio>
+    
+    
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        let audio = document.getElementById('background-music');
+        let playButton = document.getElementById('play-button');
+    
+        playButton.addEventListener('click', function() {
+          audio.muted = false; // Unmute the audio
+          audio.play();
+          playButton.style.display = 'none';
+        });
+    
+        audio.addEventListener('play', function() {
+          playButton.style.display = 'none';
+        });
+    
+        audio.addEventListener('pause', function() {
+          playButton.style.display = 'block';
+        });
+      });
+    </script>
+    
+    
+    
+    
+    
+    <a href="#" class="scrolltop"><i class="fa fa-arrow-up " style="color: white !important;"></i></a>
+<footer>
+        <p>Copyright &copy; 2023 <a>Oliwier Kacper Wozniak.</a> All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+<script src="JS/Active.js"></script>
+<script src="JS/ButtonScroll.js"></script>
+<script src="JS//KeyBoard.js"></script>

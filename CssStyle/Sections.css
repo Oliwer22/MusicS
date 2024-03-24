@@ -1,0 +1,20 @@
+/* Css for Sections*/
+section#header {
+  background: black;
+  color: white;
+  min-height: 100vh;
+}
+section#Info {
+  color: white;
+  min-height: 100vh;
+}
+section#Style {
+  color: white;
+
+  min-height: 100vh;
+}
+
+
+section {
+  min-height: 0vh;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="../CssStyle/Reset.css">
+    <link rel="stylesheet" href="../CssStyle/NavBar.css">
+    <link rel="stylesheet" href="../CssStyle/Footer.css">
+    <link rel="stylesheet" href="../CssStyle/Sections.css">
+    <link rel="stylesheet" href="../CssStyle/StyleIndex.css">
+    <link rel="stylesheet" href="../https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <nav id="main-nav">
+        <a href="../index.html">Home</a>
+        <a href="../StylePage/History.html">Geschiedenis</a>
+        <a href="../StylePage/Cultuur.html">Cultuur</a>
+        <a href="../StylePage/Instruments.html">Instrumenten</a>
+        <a href="../StylePage/Apparatuur.html">Apparatuur</a>
+        <a href="../StylePage/Artists.html"class="active">Artists</a>
+    </nav>
+    <section id="Info">
+        <article>
+            <section id="card-container">
+            <div class="card">
+                <div class="card__image">
+                <img src="../IMG/Drake.jpg" alt="Image Drake">
+                </div>
+                <div class="card__content">
+                <p class="card__title">Drake</p>
+                <p class="card__text">Aubrey Drake Graham</p>
+                <a class="card__button" href="#Info" onclick="openPopup(1)">Bekijk</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                <img src="../IMG/Kanye West.jpg" alt="Image Ye">
+                </div>
+                <div class="card__content">
+                <p class="card__title">Ye</p>
+                <p class="card__text">Kanye West</p>
+                <a class="card__button" href="#Info" onclick="openPopup(2)">Bekijk</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                <img src="../IMG/Tupac.jpg" alt="Image Tupac">
+                </div>
+                <div class="card__content">
+                <p class="card__title">Tupac</p>
+                <p class="card__text">Tupac Amaru Shakur</p>
+                <a class="card__button" href="#Info" onclick="openPopup(3)">Bekijk</a>
+                </div>
+            </div>
+            </section>
+        </article>
+        </section>
+        <a href="#" class="scrolltop"><i class="fa fa-arrow-up" style="color: white !important;"></i></a>
+        <footer>
+        <p>&copy; 2023 <a>Oliwier Kacper Wozniak.</a> All rights reserved.</p>
+        </footer>
+        <div id="popup1" class="popup">
+        <div class="popup-content">
+            <h2>Drake</h2>
+            <img src="../IMG/Drake.jpg" alt="Popup 1 Image">
+            <p>
+                Drake, wiens echte naam Aubrey Drake Graham is, is een Canadese rapper, singer-songwriter en acteur. Hij werd geboren op 24 oktober 1986 in Toronto, Ontario, Canada. Drake is een van de meest succesvolle en invloedrijke hedendaagse artiesten in de muziekindustrie.
+                
+                Drake begon zijn carrière als acteur in de populaire Canadese tv-serie "Degrassi: The Next Generation", waarin hij de rol van Jimmy Brooks speelde. In 2006 bracht hij zijn eerste mixtape uit, genaamd "Room for Improvement". Zijn muzikale doorbraak kwam echter in 2009 met de release van zijn mixtape "So Far Gone", waarop hits stonden zoals "Best I Ever Had" en "Successful".
+                
+                In 2010 bracht Drake zijn debuutalbum "Thank Me Later" uit, dat meteen een groot commercieel succes was en de nummer één positie bereikte in de Amerikaanse hitlijsten. Hij heeft sindsdien meerdere albums uitgebracht, waaronder "Take Care" (2011), "Nothing Was the Same" (2013), "Views" (2016), "Scorpion" (2018) en "Certified Lover Boy" (2021). Deze albums hebben wereldwijd miljoenen exemplaren verkocht en bevatten hits zoals "Hotline Bling", "One Dance" en "God's Plan".</p>
+            <div class="close-btn" onclick="closePopup(1)">&times;</div>
+            <a class="card__button" href="https://nl.wikipedia.org/wiki/Drake_(rapper)" target="_blank" onclick="closePopup(1)">Gaan</a>
+        </div>
+        </div>
+        <div id="popup2" class="popup">
+        <div class="popup-content">
+            <h2>Ye </h2>
+            <img src="../IMG/Kanye West.jpg" alt="Popup 2 Image">
+            <p>Naast zijn muzikale successen staat Kanye West ook bekend om zijn onvoorspelbare gedrag en uitgesproken persoonlijkheid. In 2018 kondigde hij aan dat hij zijn artiestennaam had gewijzigd naar "Ye", een bijnaam die hij al langere tijd gebruikte. Hij verklaarde dat "Ye" een verkorte versie is van zijn volledige naam Kanye en ook een verwijzing naar het woord "ye", dat in de Bijbel wordt gebruikt en "jij" of "jou" betekent.
+
+                Kanye West gaf aan dat hij de naamswijziging doorvoerde vanwege de spirituele betekenis die het voor hem had. Hij voelde dat het zijn innerlijke identiteit en connectie met zijn publiek beter weerspiegelde. Na de aankondiging van de naamswijziging bracht hij zijn album "Ye" uit, dat in juni 2018 verscheen. Het album kreeg gemengde beoordelingen maar behaalde commercieel succes en debuteerde op de eerste plaats in de Amerikaanse Billboard 200-hitlijst.
+                
+                Het veranderen van zijn artiestennaam naar "Ye" was een van de vele artistieke verschuivingen en onconventionele acties van Kanye West. Hij staat erom bekend dat hij zichzelf steeds opnieuw uitvindt en experimenteert met nieuwe geluiden en stijlen in zijn muziek. Deze evolutie heeft bijgedragen aan zijn reputatie als een innovator en pionier in de muziekindustrie.</p>
+            <div class="close-btn" onclick="closePopup(2)">&times;</div>
+            <a class="card__button" href="https://nl.wikipedia.org/wiki/Kanye_West" target="_blank" onclick="closePopup(1)">Gaan</a>
+        </div>
+        </div>
+        <div id="popup3" class="popup">
+        <div class="popup-content">
+            <h2>Tupac</h2>
+            <img src="../IMG/Tupac.jpg" alt="Popup 3 Image">
+            <p>Tupac Shakur, ook bekend als 2Pac, was een invloedrijke Amerikaanse rapper, acteur en dichter. Hij werd geboren op 16 juni 1971 in East Harlem, New York City. Tupac groeide op in een omgeving met armoede en geweld, maar ontwikkelde al op jonge leeftijd een interesse in kunst en literatuur.
+                Tupac begon zijn muzikale carrière als lid van de hiphopgroep Digital Underground, waar hij als achtergrondrapper en danser optrad. In 1991 bracht hij zijn debuutalbum "2Pacalypse Now" uit, dat veel aandacht trok vanwege zijn rauwe teksten over sociale onrechtvaardigheid en politiegeweld. Tupac's volgende albums, zoals "Strictly 4 My N.I.G.G.A.Z..." en "Me Against the World", werden zeer geprezen en gingen miljoenen keren over de toonbank.</p>
+            <div class="close-btn" onclick="closePopup(3)">&times;</div>
+            <a class="card__button" href="https://nl.wikipedia.org/wiki/Tupac_Shakur" target="_blank" onclick="closePopup(3)">Gaan</a>
+        </div>
+        </div>
+        <script>
+        function openPopup(popupId) {
+            let popup = document.getElementById("popup" + popupId);
+            popup.style.display = "block";
+        }
+        function closePopup(popupId) {
+            let popup = document.getElementById("popup" + popupId);
+            popup.style.display = "none";
+        }
+        </script>
+        <a href="#" class="scrolltop"><i class="fa fa-arrow-up " style="color: white !important;"></i></a>
+
+</body>
+</html>
